@@ -1,0 +1,207 @@
+.btn-type-one {
+  width: 125px;
+  height: 45px;
+  border-radius: 90px;
+  background-color: aliceblue;
+  color: black;
+  outline: 2px solid rgb(221, 225, 228);
+  outline-offset: -6px;
+}
+
+.btn-type-two {
+  width: 125px;
+  height: 45px;
+  border-radius: 90px;
+  background-color: aliceblue;
+  color: black;
+  outline: 2px solid rgb(221, 225, 228);
+  outline-offset: -6px;
+}
+
+.bootstrap-test {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.delete-before-live {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+body .navbar-left-text-inbar {
+  color: #f53131;
+  font-size: 15px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-dropdown-menu-left-1 {
+  min-width: 100vw;
+  border-radius: 0%;
+  border: none;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-dropdown-menu-left-2 {
+  min-width: 300px;
+  border-radius: 0px 0px 5% 5%;
+  border: none;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+#search-input {
+  display: none;
+  width: 30vw;
+}
+
+.nav-dropdown-menu-right-1 {
+  min-width: 300px;
+  border-radius: 0px 0px 5% 5%;
+  border: none;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+#container-section-billboard {
+  width: 100%;
+  aspect-ratio: 16/7;
+  position: relative;
+}
+
+#billboard-img-1 {
+  position: absolute;
+}
+
+#billboard-text-1 {
+  position: absolute;
+  margin-left: 1.5vw;
+  margin-top: 0.75vh;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 15px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 3.8vw;
+  font-weight: 700;
+}
+
+.row .col-4 {
+  outline: 1px solid black;
+}
+
+.carousel-inner-box {
+  border-radius: 20px;
+}
+
+.carousel-item-left-container {
+  background-color: #c0c0c0;
+  padding: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100px;
+}
+
+.carousel-item-left-img-container {
+  padding: 0;
+  margin: 0;
+  width: 170px;
+  height: 170px;
+}
+
+.carousel-item-right-container {
+  background-color: #989898;
+  padding: none;
+  height: 35vh;
+}
+
+.ci-s1 {
+  font-size: 15px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s2 {
+  font-size: 25px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s3 {
+  font-size: 35px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s4 {
+  font-size: 10px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-all-links {
+  width: 15vw;
+}
+
+.footer-about-fjord {
+  border-right: none !important;
+}
+
+.nav-dropdown-menu-right-2 {
+  min-width: 100vw;
+  border-radius: 0%;
+  border: none;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.footer-btn-mobile {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sub-dropdown {
+  display: none;
+}
+
+.sub-dropdown.active {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
