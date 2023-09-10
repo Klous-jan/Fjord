@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<!-- bootstrap breakpoint delete-before-live-->
-		<section class="delete-before-live">
+		<!-- <section class="delete-before-live">
 			<header class="container-fluid">
 				<div class="col-xxl-12 d-none d-xl-block">
 					<h3>XX large : TVs</h3>
@@ -71,7 +71,7 @@
 					);
 				</script>
 			</header>
-		</section>
+		</section> -->
 		<!-- bootstrap breakpoint delete-before-live-->
 
 		<!-- Navbar -->
@@ -85,6 +85,8 @@
 								<div class="dropdown">
 									<a href="#" class="me-3 nav-link py-2 px-0 d-none d-md-block navbar-left-text-inbar" data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
 									<ul class="no-close-click dropdown-menu nav-dropdown-menu-left-1">
+										<li><a class="dropdown-item" href="/test.html">TEST</a></li>
+										<li><hr class="dropdown-divider" /></li>
 										<li><a class="dropdown-item" href="#">Cars</a></li>
 										<li><hr class="dropdown-divider" /></li>
 										<li><a class="dropdown-item" href="#">Trucks</a></li>
@@ -257,7 +259,7 @@
 							<li class="mx-3"><button class="button" onclick="changedata(2)">SUPPLIER</button></li>
 						</ol>
 					</div>
-					<div class="explore-all-vehicles-carousel-container mx-5">
+					<div class="explore-all-vehicles-carousel-container">
 						<div id="myorders">
 							<!-- working carousel -->
 							<!-- <div id="myCarousel" class="carousel slide mb-6">
@@ -385,27 +387,28 @@
 							</div> -->
 							<div id="myCarousel" class="carousel slide mb-6">
 								<div class="row">
-									<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" style="outline: 5px solid black" aria-hidden="true"></span>
 										<span class="visually-hidden">Previous</span>
-									</button>
+									</button> -->
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<div class="row justify-content-around">
-												<div class="col-5">
-													<div class="row justify-content-start mx-0">
-														<div class="carousel-item-left-container col-5 px-0">
-															<img class="carousel-vehicle-left" src="/Images/cars_showroom/2-door-green-coup_bg.png" style="height: 200px" />
+											<div class="row mx-5">
+												<div class="col me-3">
+													<div class="row justify-content-start">
+														<div class="col carousel-item-left-container">
+															<img class="carousel-vehicle-left" src="/Images/cars/2-door-orange-softtop-jeep.png" style="height: 200px" />
 														</div>
 														<div class="col-6 px-0">
 															<div class="carousel-item-right-container">
-																<div class="carousel-item-right-container-header mb-3 pt-4">
-																	<div class="right-top-year ci-s1"><span class="me-2">2023 </span> | <span class="ms-2">hybrid</span></div>
+																<div class="carousel-item-right-container-header mb-3">
+																	<div class="right-top-year ci-s1">2023 | hybrid</div>
+																	<div class="right-top-type ci-s1">hybrid</div>
 																</div>
 																<div class="carousel-item-right-container-title mb-3">
 																	<div class="right-car-name ci-s2">Fjord Fjusion</div>
 																</div>
-																<div class="carousel-item-right-container-snippit pb-5">
+																<div class="carousel-item-right-container-snippit mb-5">
 																	<div class="right-car-snippit ci-s1">
 																		The car for all cars if cars could infact have cars, honestly not sure how that would work.
 																	</div>
@@ -434,9 +437,9 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-5">
+												<div class="col ms-3">
 													<div class="row justify-content-start">
-														<div class="carousel-item-left-container col-5">
+														<div class="col carousel-item-left-container">
 															<img class="carousel-vehicle-left" src="/Images/cars/2-door-blue-super.png" style="height: 200px" />
 														</div>
 														<div class="col-6 px-0">
@@ -482,7 +485,7 @@
 										<div class="carousel-item">
 											<div class="row justify-content-center">
 												<div class="col-6">
-													<div class="row justify-content-center mx-0">
+													<div class="row justify-content-center">
 														<div class="carousel-item-left-container col-6 px-0">
 															<img class="carousel-vehicle-left" src="/Images/cars_showroom/2-door-green-coup_bg.png" style="height: 200px" />
 														</div>
@@ -569,10 +572,10 @@
 											</div>
 										</div>
 									</div>
-									<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<!-- <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+										<span class="carousel-control-next-icon" style="outline: 5px solid black" aria-hidden="true"></span>
 										<span class="visually-hidden">Next</span>
-									</button>
+									</button> -->
 								</div>
 							</div>
 							<div id="myproducts">
@@ -585,21 +588,159 @@
 					</div>
 				</div>
 			</div>
-			<!-- explore all vehicles carousel -->
+			<!-- shopping tools -->
 			<div class="col-12 explore-all-vehicles-carousel">
 				<div>placeholder</div>
 			</div>
-			<div class="shopping-tools-header">
-				<div class="shopping-tools-text">
+			<!-- shopping tools -->
+			<!-- this content will only show on large => (768px and larger) screens -->
+			<div class="shopping-tools-container d-none d-md-block">
+				<div class="shopping-tools-text my-5">
 					<h1 class="nav justify-content-center">Shopping Tools</h1>
 				</div>
-				<div class="shopping-tools-list">
-					<ul class="nav justify-content-center">
-						<li><img src="..." /><a>Build & Price</a></li>
-						<li><img src="..." /><a>Search Inventory</a></li>
-						<li><img src="..." /><a>Local Specials</a></li>
-						<li><img src="..." /><a>Find a Dealership</a></li>
-					</ul>
+				<div class="nav justify-content-around shopping-tools-list-container mb-5 mx-5" style="background-color: #fbfbfb; height: 200px;">
+					<div class="shopping-content-wrapper" style="width: 25%; height: 200px; max-height: 200px auto; display: flex; justify-content: center; align-items: center;">
+						<div id="first-list" class="shopping-content-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 150px; width: 100%;">
+							<a href="javascript:void(0)" class="shopping-content-container-inner" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+								<div class="shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+										<path
+											d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
+									</svg>
+								</div>
+								<div class="shopping-content-decendant">
+									<h5 class="mb-0">Build & Price</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="shopping-content-wrapper" style="width: 25%; height: 200px; max-height: 200px auto; display: flex; justify-content: center; align-items: center;">
+						<div id="first-list" class="shopping-content-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 150px; width: 100%; border-left: 1px solid #d8d8d8;">
+							<a href="javascript:void(0)" class="shopping-content-container-inner" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+								<div class="shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+										<path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+										<path
+											d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+									</svg>
+								</div>
+								<div class="shopping-content-decendant">
+									<h5 class="mb-0">Search Inventory</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="shopping-content-wrapper" style="width: 25%; height: 200px; max-height: 200px auto; display: flex; justify-content: center; align-items: center;">
+						<div id="first-list" class="shopping-content-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 150px; width: 100%; border-left: 1px solid #d8d8d8;">
+							<a href="javascript:void(0)" class="shopping-content-container-inner" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+								<div class="shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+										<path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+										<path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+									</svg>
+								</div>
+								<div class="shopping-content-decendant">
+									<h5 class="mb-0">Local Specials</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="shopping-content-wrapper" style="width: 25%; height: 200px; max-height: 200px auto; display: flex; justify-content: center; align-items: center;">
+						<div id="first-list" class="shopping-content-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 150px; width: 100%; border-left: 1px solid #d8d8d8;">
+							<a href="javascript:void(0)" class="shopping-content-container-inner" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+								<div class="shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+										<path
+											d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+									</svg>
+								</div>
+								<div class="shopping-content-decendant">
+									<h5 class="mb-0">Find a Dealership</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- shopping tools : mobile-->
+			<!-- this content will only show on medium =< (767px and smaller) screens -->
+			<div class="shopping-tools-container d-md-none">
+				<div class="shopping-tools-text my-5">
+					<h1 class="nav justify-content-center">Shopping Tools</h1>
+				</div>
+				<div class="nav justify-content-around m-shopping-tools-list-container mb-5 mx-5">
+					<div class="m-shopping-content-wrapper">
+						<div class="box-1 m-shopping-content-container">
+							<a href="javascript:void(0)" class="m-shopping-content-container-inner">
+								<div class="m-shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+										<path
+											d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
+									</svg>
+								</div>
+								<div class="m-shopping-content-decendant">
+									<h5 class="mb-0">Build & Price</h4>
+								</div>
+							</a>
+						</div>
+						<div class="bot-right shopping-outline">
+
+						</div>
+					</div>
+					<div class="m-shopping-content-wrapper">
+						<div class="box-2 m-shopping-content-container">
+							<a href="javascript:void(0)" class="m-shopping-content-container-inner">
+								<div class="m-shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+										<path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+										<path
+											d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+									</svg>
+								</div>
+								<div class="m-shopping-content-decendant">
+									<h5 class="mb-0">Search Inventory</h4>
+								</div>
+							</a>
+						</div>
+						<div class="bot-left shopping-outline">
+
+						</div>
+					</div>
+					<div class="m-shopping-content-wrapper">
+						<div class="box-3 m-shopping-content-container">
+							<a href="javascript:void(0)" class="m-shopping-content-container-inner">
+								<div class="m-shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+										<path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+										<path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+									</svg>
+								</div>
+								<div class="m-shopping-content-decendant">
+									<h5 class="mb-0">Local Specials</h4>
+								</div>
+							</a>
+						</div>
+						<div class="top-right shopping-outline">
+
+						</div>
+					</div>
+					<div class="m-shopping-content-wrapper">
+						<div class="box-4 m-shopping-content-container">
+							<a href="javascript:void(0)" class="m-shopping-content-container-inner">
+								<div class="m-shopping-content-decendant">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+										<path
+											d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+									</svg>
+								</div>
+								<div class="m-shopping-content-decendant">
+									<h5 class="mb-0">Find a Dealership</h4>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- billboard 2 -->
@@ -629,9 +770,9 @@
 					<div>
 						<nav>
 							<ol class="nav justify-content-center">
-								<li class="mx-3"><a>Freatured Stories</a></li>
+								<li class="me-3"><a>Freatured Stories</a></li>
 								<li class="mx-3"><a>Technology</a></li>
-								<li class="mx-3"><a>Services & Offers</a></li>
+								<li class="ms-3"><a>Services & Offers</a></li>
 							</ol>
 						</nav>
 					</div>

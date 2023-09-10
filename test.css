@@ -1,0 +1,50 @@
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
+/* .carousel-container-full {
+	outline: 1px solid black;
+	background-color: green;
+	height: 400px;
+	width: 9000px;
+	margin-top: 50px;
+} */
+
+.carousel_slide_section {
+	height: 400px;
+	width: 1648px;
+}
+
+ul {
+	columns: 2;
+}
+
+.carousel_slide_left_container {
+	width: 400px;
+	height: 400px;
+	outline: 2px solid blue;
+}
+
+.carousel_slide_image {
+	width: 400px;
+	height: 400px;
+}
+
+.carousel_slide_right_container {
+	width: 400px;
+	height: 400px;
+	outline: 2px solid blue;
+}
+
+.cs_cc {
+	width: 50%;
+	float: left;
+	outline: 2px solid red;
+}
+
+.cs_cs {
+	width: 50%;
+	float: left;
+	outline: 2px solid red;
+}
