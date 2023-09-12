@@ -9,11 +9,23 @@
 			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 			crossorigin="anonymous" />
 		<link rel="stylesheet" href="./Styles/style.css" />
+		<!-- 
+		link (( <link rel="shortcut icon" href="#"> ))below removes ::
+			GET http://127.0.0.1:5500/favicon.ico 404 (Not Found)
+		from the browser console, HOWEVER :
+		it makes a new error in the browser console ::
+			GET http://127.0.0.1:5500/... 404 (Not Found)
+		which is directed at the integrity line
+		in the js/bootstrap.bundle.min.js script at the bottom of the site code.
+			from what i can see, favicon.ico 404 is harmless and not worth
+			redirecting an issue possibly interfearing with the bootstrap.js
+		-->
+		<!-- <link rel="shortcut icon" href="#"> -->
 		<title>Fjord Vehicles</title>
 	</head>
 	<body>
 		<!-- bootstrap breakpoint delete-before-live-->
-		<!-- <section class="delete-before-live">
+		<section class="delete-before-live">
 			<header class="container-fluid">
 				<div class="col-xxl-12 d-none d-xl-block">
 					<h3>XX large : TVs</h3>
@@ -71,7 +83,7 @@
 					);
 				</script>
 			</header>
-		</section> -->
+		</section>
 		<!-- bootstrap breakpoint delete-before-live-->
 
 		<!-- Navbar -->
@@ -237,14 +249,20 @@
 		</nav>
 		<!-- entire page outside of header && footer is wrapped in the main -->
 		<div role="main">
-			<!-- billboard 1 -->
+			<!-- video section -->
 			<div id="container-section-billboard" class="billboard mb-5">
-				<img id="billboard-img-1" src="/Images/cars/car-bridge-billboard1440x630_16by7.png" width="100%" />
-				<p id="billboard-text-1" class="">
-					Norways #1 car manufacturer <br />
-					based on natural forming<br />
-					geographic puns
-				</p>
+				<div class="billboard-play-icon" onclick="togglePlayPause();">
+					<svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16" style="z-index: 2; color: #c0c0c0">
+						<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+						<path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+					</svg>
+				</div>
+				<div id="container-section-billboard-mute-icon" class="container-section-billboard-mute-icon" onclick="muteToggle();" style="z-index: 2;">
+					<svg id="mute-icon-svg-swap" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16" style="z-index: 2; color: #c0c0c0">
+  						<path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+					</svg>
+				</div>
+				<video onclick="togglePlayPause();" muted id="inside" type="audio/mp3" width="100%" src="/Images/Video/Fjord_promo.mp4"></video>
 			</div>
 			<div class="row">
 				<!-- explore all vehicles list -->
@@ -254,9 +272,10 @@
 					</div>
 					<div>
 						<ol class="nav justify-content-center">
-							<li class="mx-3"><button class="button" onclick="changedata(0)">ORDERS</button></li>
-							<li class="mx-3"><button class="button" onclick="changedata(1)">PRODUCTS</button></li>
-							<li class="mx-3"><button class="button" onclick="changedata(2)">SUPPLIER</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(0)">Cars & Minivans</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(1)">Trucks</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(2)">SUVs & Crossovers</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(3)">Electric</button></li>
 						</ol>
 					</div>
 					<div class="explore-all-vehicles-carousel-container">
@@ -743,9 +762,15 @@
 					</div>
 				</div>
 			</div>
-			<!-- billboard 2 -->
+			<!-- billboard 1 -->
 			<div id="container-section-billboard" class="billboard mb-5">
-				<img id="billboard-img-2" src="/Images/Stock/happy_mother_and_child_in_car.jpg" width="100%" />
+				<img id="billboard-img-1" src="/Images/cars/car-bridge-billboard1440x630_16by7.png" width="100%" />
+				<p id="billboard-text-1" class="">
+					Norways #1 car manufacturer <br />
+					based on natural forming<br />
+					geographic puns
+				</p>
+				<!-- <img id="billboard-img-2" src="/Images/Stock/happy_mother_and_child_in_car.jpg" width="100%" /> -->
 			</div>
 			<!-- learn more -->
 			<!-- learn-more-container full width banner color -->
@@ -777,6 +802,10 @@
 						</nav>
 					</div>
 				</div>
+			</div>
+			<!-- billboard 2 -->
+			<div id="container-section-billboard" class="billboard mb-5">
+				<img id="billboard-img-2" src="/Images/Stock/happy_mother_and_child_in_car.jpg" width="100%" />
 			</div>
 			<!-- About and testimonials -->
 			<div class="nav justify-content-center col-6">

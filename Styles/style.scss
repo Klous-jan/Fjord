@@ -15,6 +15,15 @@
 	outline-offset: -6px;
 }
 
+.container-section-billboard-mute-icon {
+	height: 10%;
+	width: 5%;
+	position: absolute;
+	bottom: 53px;
+	right: 20px;
+	cursor: pointer;
+}
+
 // button preset
 .btn-type-one {
 	@include buttonPre();
@@ -90,6 +99,22 @@ body .navbar-left-text-inbar {
 	//    0px [spread](optional)
 	//    [color]
 	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+// video billboard 1
+.billboard-play-icon {
+	width: 100%;
+	aspect-ratio: 16 / 6.85;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+#play-icon {
+	height: 80%;
+	width: 100%;
+	opacity: 0.2;
 }
 
 // billboard

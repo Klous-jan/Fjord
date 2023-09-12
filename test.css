@@ -1,50 +1,112 @@
-* {
+/* v--v--v--v--v--v--v--v--DO NOT MODIFY--v--v--v--v--v--v--v--v--v--v */
+.wrapper {
+	display: flex;
+	width: 100%;
+	white-space: normal;
+}
+.blocker {
+	height: 300px;
+	width: 48px;
+	background-color: white;
+	z-index: 10;
+}
+
+.container {
+	display: flex;
+	position: relative; /* Use relative positioning */
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.container-outer {
+	display: flex;
+	position: relative; /* Use relative positioning */
+	transition: transform 1s ease;
+	width: 600px;
+	margin: 0;
+	/* margin-left: 60px; */
+	/* margin-right: 60px; */
+	padding-left: 26px;
+}
+
+.carousel-item-container {
+	display: flex;
+	width: 600px;
+	margin-right: 26px;
+	padding: 0;
+	border-radius: 10% 0 0 10%;
+}
+
+img {
+	min-width: 335px;
+	border-radius: 10% 0 0 10%;
+	border: 1px solid #ccc;
+}
+
+.box {
+	display: flex;
+	height: 300px; /* Set the height for both divs */
+}
+
+#box1 {
+	width: 335px; /* Set the width for Div 1 */
+	/* border: 1px solid #ccc; */
+}
+
+#box2 {
+	width: 265px; /* Set the width for Div 2 */
+	display: block; /* Added this, delete first if broken*/
+	border: 1px solid #ccc;
+	border-radius: 0 30px 6% 0;
+	border-left: 1px solid black;
+	position: relative;
+}
+/* ^--^--^--^--^--^--^--^--DO NOT MODIFY--^--^--^--^--^--^--^--^--^--^ */
+
+/* Carousel Item - Style #1 */
+.ci-s1 {
+	font-size: 15px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
 	text-decoration: none;
-	list-style: none;
+}
+/* Carousel Item - Style #2 */
+.ci-s2 {
+	font-size: 25px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* Carousel Item - Style #3 */
+.ci-s3 {
+	font-size: 30px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* Carousel Item - Style #4 */
+.ci-s4 {
+	font-size: 10px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
 }
 
-/* .carousel-container-full {
-	outline: 1px solid black;
-	background-color: green;
-	height: 400px;
-	width: 9000px;
-	margin-top: 50px;
-} */
-
-.carousel_slide_section {
-	height: 400px;
-	width: 1648px;
+.box2-inner-container {
+	position: absolute;
+	bottom: 10px;
 }
 
-ul {
-	columns: 2;
-}
-
-.carousel_slide_left_container {
-	width: 400px;
-	height: 400px;
-	outline: 2px solid blue;
-}
-
-.carousel_slide_image {
-	width: 400px;
-	height: 400px;
-}
-
-.carousel_slide_right_container {
-	width: 400px;
-	height: 400px;
-	outline: 2px solid blue;
-}
-
-.cs_cc {
-	width: 50%;
-	float: left;
-	outline: 2px solid red;
-}
-
-.cs_cs {
-	width: 50%;
-	float: left;
-	outline: 2px solid red;
-}
+/* Set overall font styling for site. */
+/* OverAll Font Styling ## Normal - Bold */
+/* OAFS-1n */
+/* OAFS-1b */
+/* OAFS-2n */
+/* OAFS-2b */
+/* OAFS-3n */
+/* OAFS-3b */
+/* OAFS-4n */
+/* OAFS-4b */
+/* OAFS-5n */
+/* OAFS-5b */
