@@ -6,7 +6,7 @@
 }
 
 @mixin buttonPre {
-	width: 125px;
+	width: 100px;
 	height: 45px;
 	border-radius: 90px;
 	background-color: aliceblue;
@@ -31,6 +31,19 @@
 
 .btn-type-two {
 	@include buttonPre();
+	width: 75px;
+	height: 45px;
+	background-color: black;
+	transition-duration: 0.5s;
+}
+
+.btn-type-two:hover {
+	background-color: #58595b;
+	transition: all 0.5s ease-out;
+}
+
+.btn-type-two-img {
+	height: 30px;
 }
 
 // Test area
@@ -152,11 +165,12 @@ body .navbar-left-text-inbar {
 	border-radius: 20px;
 }
 
-// #myorders,
-// #myproducts,
-// #mysupplier {
-// 	display: none;
-// }
+#myorders,
+#myproducts,
+#mysupplier {
+	height: auto;
+	width: 100%;
+}
 
 // explore all vehicles carousel
 

@@ -11,7 +11,7 @@
 	z-index: 10;
 }
 
-.cars_Minivans-container-outer {
+.container-outer {
 	display: flex;
 	position: relative; /* Use relative positioning */
 	transition: transform 1s ease;
@@ -22,7 +22,7 @@
 	padding-left: 26px;
 }
 
-.cars_Minivans-carousel-item-container {
+.carousel-item-container {
 	display: flex;
 	width: 600px;
 	margin-right: 26px;
@@ -101,13 +101,6 @@
 	text-decoration: none;
 }
 
-#cars_Minivans,
-#SUVs_Crossovers,
-#electric,
-#lil_tikes {
-	display: none;
-}
-
 .box-inner-container {
 	position: absolute;
 	bottom: 10px;
@@ -116,25 +109,6 @@
 .carousel-buttons-container {
 	width: 100%;
 	text-align: center;
-}
-
-.btn-type-two {
-	border-radius: 90px;
-	color: black;
-	outline: 2px solid rgb(221, 225, 228);
-	outline-offset: -6px;
-	width: 75px;
-	height: 45px;
-	background-color: black;
-}
-
-.btn-type-two:hover {
-	background-color: #58595b;
-	transition: all 0.5s ease-out;
-}
-
-.btn-type-two-img {
-	height: 30px;
 }
 
 /* Set overall font styling for site. */

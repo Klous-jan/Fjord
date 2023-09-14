@@ -68,22 +68,34 @@ dropdownBtns.forEach((button) => button.addEventListener("click", handleClick));
 // the button that is clicked
 function changedata(parameter) {
 	if (parameter === 0) {
-		document.getElementById("myorders").style.display = "block";
+		document.getElementById("cars_Minivans").style.display = "block";
 	}
 	if (parameter !== 0) {
-		document.getElementById("myorders").style.display = "none";
+		document.getElementById("cars_Minivans").style.display = "none";
 	}
 	if (parameter === 1) {
-		document.getElementById("myproducts").style.display = "block";
+		document.getElementById("trucks").style.display = "block";
 	}
 	if (parameter !== 1) {
-		document.getElementById("myproducts").style.display = "none";
+		document.getElementById("trucks").style.display = "none";
 	}
 	if (parameter === 2) {
-		document.getElementById("mysupplier").style.display = "block";
+		document.getElementById("SUVs_Crossovers").style.display = "block";
 	}
 	if (parameter !== 2) {
-		document.getElementById("mysupplier").style.display = "none";
+		document.getElementById("SUVs_Crossovers").style.display = "none";
+	}
+	if (parameter === 3) {
+		document.getElementById("electric").style.display = "block";
+	}
+	if (parameter !== 3) {
+		document.getElementById("electric").style.display = "none";
+	}
+	if (parameter === 3) {
+		document.getElementById("lil_tikes").style.display = "block";
+	}
+	if (parameter !== 3) {
+		document.getElementById("lil_tikes").style.display = "none";
 	}
 }
 // ================================
