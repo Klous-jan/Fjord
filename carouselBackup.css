@@ -1,0 +1,120 @@
+/* v--v--v--v--v--v--v--v--DO NOT MODIFY--v--v--v--v--v--v--v--v--v--v */
+.wrapper {
+	display: flex;
+	width: 100%;
+	white-space: normal;
+}
+.blocker {
+	height: 300px;
+	width: 48px;
+	background-color: white;
+	z-index: 10;
+}
+
+.container-outer {
+	display: flex;
+	position: relative; /* Use relative positioning */
+	transition: transform 1s ease;
+	width: 600px;
+	margin: 0;
+	/* margin-left: 60px; */
+	/* margin-right: 60px; */
+	padding-left: 26px;
+}
+
+.carousel-item-container {
+	display: flex;
+	width: 600px;
+	margin-right: 26px;
+	padding: 0;
+	border-radius: 10% 0 0 10%;
+}
+
+.container {
+	display: flex;
+	position: relative; /* Use relative positioning */
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+/* added */
+.carousel-item-container.last-slide {
+	justify-content: flex-end; /* Align the last slide to the right */
+	border-radius: 0 10% 10% 0; /* Adjust border-radius for the right side */
+}
+/* added */
+
+.left-box-img {
+	min-width: 335px;
+	border-radius: 10% 0 0 10%;
+	border: 1px solid #ccc;
+	border-right: none;
+}
+
+.box {
+	display: flex;
+	height: 335px; /* Set the height for both divs */
+}
+
+.left-box-img-container {
+	width: 335px; /* Set the width for Div 1 */
+	/* border: 1px solid #ccc; */
+}
+
+.right-box-info-container {
+	width: 265px; /* Set the width for Div 2 */
+	display: block; /* Added this, delete first if broken*/
+	border: 1px solid #ccc;
+	border-left: none;
+	border-radius: 0 30px 6% 0;
+	position: relative;
+}
+/* ^--^--^--^--^--^--^--^--DO NOT MODIFY--^--^--^--^--^--^--^--^--^--^ */
+
+/* Carousel Item - Style #1 */
+.ci-s1 {
+	font-size: 15px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* Carousel Item - Style #2 */
+.ci-s2 {
+	font-size: 25px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* Carousel Item - Style #3 */
+.ci-s3 {
+	font-size: 30px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* Carousel Item - Style #4 */
+.ci-s4 {
+	font-size: 10px;
+	font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.box-inner-container {
+	position: absolute;
+	bottom: 10px;
+}
+
+/* Set overall font styling for site. */
+/* OverAll Font Styling ## Normal - Bold */
+/* OAFS-1n */
+/* OAFS-1b */
+/* OAFS-2n */
+/* OAFS-2b */
+/* OAFS-3n */
+/* OAFS-3b */
+/* OAFS-4n */
+/* OAFS-4b */
+/* OAFS-5n */
+/* OAFS-5b */
