@@ -2,48 +2,33 @@
 .wrapper {
 	display: flex;
 	width: 100%;
-	white-space: normal;
-}
-.blocker {
-	height: 300px;
-	width: 48px;
-	background-color: white;
-	z-index: 10;
+	/* white-space: normal; */
 }
 
-.container-outer {
+.vehicle-container-outer {
 	display: flex;
-	position: relative; /* Use relative positioning */
 	transition: transform 1s ease;
-	width: 600px;
+	/* width: 100%; */
 	margin: 0;
-	/* margin-left: 60px; */
-	/* margin-right: 60px; */
-	padding-left: 26px;
+	padding-left: 30px;
+	outline: 1px solid blue;
 }
 
-.carousel-item-container {
+.vehicle-carousel-item-container {
 	display: flex;
 	width: 600px;
-	margin-right: 26px;
+	margin-right: 30px;
 	padding: 0;
 	border-radius: 10% 0 0 10%;
 }
 
 .container {
 	display: flex;
-	position: relative; /* Use relative positioning */
+	position: relative;
 	width: 600px;
 	margin: 0;
 	padding: 0;
 }
-
-/* added */
-.carousel-item-container.last-slide {
-	justify-content: flex-end; /* Align the last slide to the right */
-	border-radius: 0 10% 10% 0; /* Adjust border-radius for the right side */
-}
-/* added */
 
 .left-box-img {
 	min-width: 335px;
@@ -69,6 +54,10 @@
 	border-left: none;
 	border-radius: 0 30px 6% 0;
 	position: relative;
+}
+
+.last-carousel-item-containe {
+	padding-right: 26px;
 }
 /* ^--^--^--^--^--^--^--^--DO NOT MODIFY--^--^--^--^--^--^--^--^--^--^ */
 
