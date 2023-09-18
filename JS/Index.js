@@ -23,7 +23,6 @@ btn.addEventListener("click", () => {
 });
 
 // dont close dropdown on click
-
 var elements = document.getElementsByClassName("no-close-click");
 for (var i = 0; i < elements.length; i++) {
 	elements[i].addEventListener("click", function (event) {
@@ -62,42 +61,6 @@ const handleLeave = () => {
 
 dropdownItem.forEach((item) => item.addEventListener("mouseleave", handleLeave));
 dropdownBtns.forEach((button) => button.addEventListener("click", handleClick));
-
-// explore all vehicles list:
-// Only show the content of
-// the button that is clicked
-function changedata(parameter) {
-	if (parameter === 0) {
-		document.getElementById("cars_Minivans").style.display = "block";
-	}
-	if (parameter !== 0) {
-		document.getElementById("cars_Minivans").style.display = "none";
-	}
-	if (parameter === 1) {
-		document.getElementById("trucks").style.display = "block";
-	}
-	if (parameter !== 1) {
-		document.getElementById("trucks").style.display = "none";
-	}
-	if (parameter === 2) {
-		document.getElementById("SUVs_Crossovers").style.display = "block";
-	}
-	if (parameter !== 2) {
-		document.getElementById("SUVs_Crossovers").style.display = "none";
-	}
-	if (parameter === 3) {
-		document.getElementById("electric").style.display = "block";
-	}
-	if (parameter !== 3) {
-		document.getElementById("electric").style.display = "none";
-	}
-	if (parameter === 3) {
-		document.getElementById("lil_tikes").style.display = "block";
-	}
-	if (parameter !== 3) {
-		document.getElementById("lil_tikes").style.display = "none";
-	}
-}
 // ================================
 // mute video toggle
 // ================================

@@ -68,6 +68,7 @@ body {
 
 html {
 	overflow-x: hidden;
+	width: 110%;
 }
 
 li {
@@ -157,12 +158,6 @@ body .navbar-left-text-inbar {
 	font-weight: 700;
 }
 
-// delete
-.row .col-4 {
-	outline: 1px solid black;
-}
-// delete
-
 // // explore all vehicles list
 
 .carousel-inner-box {
@@ -244,7 +239,6 @@ body .navbar-left-text-inbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// outline: 1px dotted rgba(0, 0, 0, 0.05);
 	position: relative;
 }
 

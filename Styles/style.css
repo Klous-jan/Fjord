@@ -58,6 +58,11 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+  width: 110%;
+}
+
 li {
   list-style-type: none;
 }
@@ -134,10 +139,6 @@ body .navbar-left-text-inbar {
   color: aliceblue;
   font-size: 3.8vw;
   font-weight: 700;
-}
-
-.row .col-4 {
-  outline: 1px solid black;
 }
 
 .carousel-inner-box {

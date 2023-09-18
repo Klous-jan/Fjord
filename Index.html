@@ -86,7 +86,6 @@
 			</header>
 		</section>
 		<!-- bootstrap breakpoint delete-before-live-->
-
 		<!-- Navbar -->
 		<nav class="p-2 mb-0 border-bottom">
 			<div class="container-header">
@@ -172,7 +171,7 @@
 						<!-- Navbar_right content -->
 						<div class="col-5 align-items-center d-flex flex-wrap justify-content-end dropdown">
 							<!-- Navbar_search bar -->
-							<form class="col-4 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-md-block" role="search">
+							<form class="col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-md-block" role="search">
 								<input type="search" id="search-input" class="form-control" placeholder="Search" aria-label="Search" />
 							</form>
 							<!-- Navbar_search icon -->
@@ -248,6 +247,7 @@
 				</div>
 			</div>
 		</nav>
+
 		<!-- entire page outside of header && footer is wrapped in the main -->
 		<div role="main">
 			<!-- video section -->
@@ -263,1549 +263,1548 @@
   						<path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
 					</svg>
 				</div>
-				<video onclick="togglePlayPause();" muted id="inside" type="audio/mp3" width="100%" src="/Images/Video/Fjord_promo.mp4"></video>
+				<video onclick="togglePlayPause();" muted id="inside" type="audio/mp3" width="100%" src="/Images/Video/FjordPromo_CompressedFile.mp4"></video>
 			</div>
 			<!-- carousel section 1 -->
-			<div class="row">
 			<!-- explore all vehicles list -->
-			<div class="explore-all-vehicles-header">
-				<div>
-					<h1 class="nav justify-content-center">Explore All Vehicles</h1>
+				<div class="explore-all-vehicles-header">
+					<div>
+						<h1 class="nav justify-content-center">Explore All Vehicles</h1>
+					</div>
+					<div>
+						<ol class="nav justify-content-center">
+							<li class="mx-3"><button class="button" onclick="changedata(0)">Cars & Minivans</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(1)">Trucks</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(2)">SUVs & Crossovers</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(3)">Electric</button></li>
+							<li class="mx-3"><button class="button" onclick="changedata(4)">Lil Tikes</button></li>
+						</ol>
+					</div>
+					<div class="explore-all-vehicles-carousel-container mt-5">
+						<div id="cars_Minivans">
+							<!-- working carousel -->
+							<div class="wrapper">
+								<!-- <div class="block"></div> -->
+								<div id="cars_Minivans-container-outer" class="cars_Minivans-container-outer vehicle-container-outer">
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container last-carousel-item-container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img " src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 1</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-buttons-container">
+								<div class="carousel-buttons mt-3">
+									<button id="cars_Minivans-prev-slide" class="btn-type-two prev-slide mx-5">
+										<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+														33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+														0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+														0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+														0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+											</g>
+										</svg>
+									</button>
+									<button id="cars_Minivans-next-slide" class="btn-type-two next-slide mx-5">
+										<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+														0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+														0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+														22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+														22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="trucks">
+							<div class="wrapper">
+								<div id="trucks-container-outer" class="trucks-container-outer vehicle-container-outer">
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> TRUCK 1</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trucks-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-buttons-container">
+								<div class="carousel-buttons mt-3">
+									<button id="trucks-prev-slide" class="btn-type-two prev-slide mx-5">
+										<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+														33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+														0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+														0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+														0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+											</g>
+										</svg>
+									</button>
+									<button id="trucks-next-slide" class="btn-type-two next-slide mx-5">
+										<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+														0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+														0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+														22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+														22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="SUVs_Crossovers">
+							<div class="wrapper">
+								<div id="SUVs_Crossovers-container-outer" class="SUVs_Crossovers-container-outer vehicle-container-outer">
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> SUV 1</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-buttons-container">
+								<div class="carousel-buttons mt-3">
+									<button id="SUVs_Crossovers-prev-slide" class="btn-type-two prev-slide mx-5">
+										<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+														33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+														0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+														0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+														0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+											</g>
+										</svg>
+									</button>
+									<button id="SUVs_Crossovers-next-slide" class="btn-type-two next-slide mx-5">
+										<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+														0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+														0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+														22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+														22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="electric">
+							<div class="wrapper">
+								<div id="electric-container-outer" class="electric-container-outer vehicle-container-outer">
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> ELECTRIC 1</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="electric-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-buttons-container">
+								<div class="carousel-buttons mt-3">
+									<button id="electric-prev-slide" class="btn-type-two prev-slide mx-5">
+										<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+														33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+														0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+														0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+														0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+											</g>
+										</svg>
+									</button>
+									<button id="electric-next-slide" class="btn-type-two next-slide mx-5">
+										<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+														0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+														0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+														22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+														22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="lil_tikes">
+							<div class="wrapper">
+								<div id="lil_tikes-container-outer" class="lil_tikes-container-outer vehicle-container-outer">
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> LIL TIKES 1</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
+										<div class="container">
+											<div class="left-box-img-container box">
+												<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+											</div>
+											<div class="right-box-info-container box px-3 py-2">
+												<div class="box-header mb-3">
+													<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
+												</div>
+												<div class="box-title mb-3">
+													<div class="title-car-name ci-s2">Fjord Fjusion</div>
+												</div>
+												<div class="box-snippit">
+													<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
+												</div>
+												<div class="box-inner-container">
+													<div class="row">
+														<div class="inner-container-left col-6">
+															<div class="inner-container-left-price ci-s3">$39,999</div>
+															<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
+														</div>
+														<div class="inner-container-right col-6">
+															<div class="inner-container-right-mpg ci-s3">40/35</div>
+															<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="button-container-left col-6">
+															<button class="btn-type-one">explore</button>
+														</div>
+														<div class="button-container-right col-6">
+															<button class="btn-type-one">build</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-buttons-container">
+								<div class="carousel-buttons mt-3">
+									<button id="lil_tikes-prev-slide" class="btn-type-two prev-slide mx-5">
+										<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+														33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+														0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+														0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+														0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+											</g>
+										</svg>
+									</button>
+									<button id="lil_tikes-next-slide" class="btn-type-two next-slide mx-5">
+										<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+														0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+														0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+														22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+														22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div>
-					<ol class="nav justify-content-center">
-						<li class="mx-3"><button class="button" onclick="changedata(0)">Cars & Minivans</button></li>
-						<li class="mx-3"><button class="button" onclick="changedata(1)">Trucks</button></li>
-						<li class="mx-3"><button class="button" onclick="changedata(2)">SUVs & Crossovers</button></li>
-						<li class="mx-3"><button class="button" onclick="changedata(3)">Electric</button></li>
-						<li class="mx-3"><button class="button" onclick="changedata(4)">Lil Tikes</button></li>
-					</ol>
-				</div>
-				<div class="explore-all-vehicles-carousel-container mt-5">
-					<div id="cars_Minivans">
-						<!-- working carousel -->
-						<div class="wrapper">
-							<!-- <div class="block"></div> -->
-							<div id="cars_Minivans-container-outer" class="cars_Minivans-container-outer vehicle-container-outer">
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container last-carousel-item-container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img " src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 1</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cars_Minivans-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-buttons-container">
-							<div class="carousel-buttons mt-3">
-								<button id="cars_Minivans-prev-slide" class="btn-type-two prev-slide mx-5">
-									<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
-													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
-													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
-													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
-													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
-										</g>
-									</svg>
-								</button>
-								<button id="cars_Minivans-next-slide" class="btn-type-two next-slide mx-5">
-									<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
-													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
-													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
-													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
-													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div id="trucks">
-						<div class="wrapper">
-							<div id="trucks-container-outer" class="trucks-container-outer vehicle-container-outer">
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> TRUCK 1</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="trucks-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-buttons-container">
-							<div class="carousel-buttons mt-3">
-								<button id="trucks-prev-slide" class="btn-type-two prev-slide mx-5">
-									<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
-													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
-													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
-													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
-													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
-										</g>
-									</svg>
-								</button>
-								<button id="trucks-next-slide" class="btn-type-two next-slide mx-5">
-									<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
-													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
-													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
-													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
-													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div id="SUVs_Crossovers">
-						<div class="wrapper">
-							<div id="SUVs_Crossovers-container-outer" class="SUVs_Crossovers-container-outer vehicle-container-outer">
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> SUV 1</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="SUVs_Crossovers-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-buttons-container">
-							<div class="carousel-buttons mt-3">
-								<button id="SUVs_Crossovers-prev-slide" class="btn-type-two prev-slide mx-5">
-									<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
-													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
-													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
-													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
-													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
-										</g>
-									</svg>
-								</button>
-								<button id="SUVs_Crossovers-next-slide" class="btn-type-two next-slide mx-5">
-									<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
-													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
-													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
-													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
-													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div id="electric">
-						<div class="wrapper">
-							<div id="electric-container-outer" class="electric-container-outer vehicle-container-outer">
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> ELECTRIC 1</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="electric-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-buttons-container">
-							<div class="carousel-buttons mt-3">
-								<button id="electric-prev-slide" class="btn-type-two prev-slide mx-5">
-									<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
-													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
-													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
-													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
-													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
-										</g>
-									</svg>
-								</button>
-								<button id="electric-next-slide" class="btn-type-two next-slide mx-5">
-									<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
-													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
-													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
-													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
-													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div id="lil_tikes">
-						<div class="wrapper">
-							<div id="lil_tikes-container-outer" class="lil_tikes-container-outer vehicle-container-outer">
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> LIL TIKES 1</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 2</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 3</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 4</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 5</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 6</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="lil_tikes-carousel-item-container vehicle-carousel-item-container">
-									<div class="container">
-										<div class="left-box-img-container box">
-											<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
-										</div>
-										<div class="right-box-info-container box px-3 py-2">
-											<div class="box-header mb-3">
-												<div class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 7</div>
-											</div>
-											<div class="box-title mb-3">
-												<div class="title-car-name ci-s2">Fjord Fjusion</div>
-											</div>
-											<div class="box-snippit">
-												<div class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</div>
-											</div>
-											<div class="box-inner-container">
-												<div class="row">
-													<div class="inner-container-left col-6">
-														<div class="inner-container-left-price ci-s3">$39,999</div>
-														<div class="inner-container-left-disclaimer ci-s4">might be more, might be less *</div>
-													</div>
-													<div class="inner-container-right col-6">
-														<div class="inner-container-right-mpg ci-s3">40/35</div>
-														<div class="inner-container-right-disclaimer ci-s4">Might get 50?</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="button-container-left col-6">
-														<button class="btn-type-one">explore</button>
-													</div>
-													<div class="button-container-right col-6">
-														<button class="btn-type-one">build</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-buttons-container">
-							<div class="carousel-buttons mt-3">
-								<button id="lil_tikes-prev-slide" class="btn-type-two prev-slide mx-5">
-									<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
-													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
-													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
-													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
-													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
-										</g>
-									</svg>
-								</button>
-								<button id="lil_tikes-next-slide" class="btn-type-two next-slide mx-5">
-									<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<path
-												d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
-													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
-													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
-													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
-													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<!-- shopping tools -->
 			<div class="col-12 explore-all-vehicles-carousel">
 				<div>placeholder</div>
