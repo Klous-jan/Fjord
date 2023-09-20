@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html {
+  overflow-x: hidden;
+}
+
+.outsideContainer {
+  display: block;
+  outline: 2px solid blue;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.resizingContainer {
+  justify-content: space-around;
+  width: calc(100% - 10px);
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.resizingElement {
+  height: 335px;
+  margin: 10px;
+  width: calc(100% - 20px);
+  padding: 0;
+  outline: 1px solid black;
+  display: inline-flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.left-box-img {
+  min-width: 335px;
+  border-radius: 10% 0 0 10%;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.box {
+  display: flex;
+  height: 335px; /* Set the height for both divs */
+}
+
+.right-box-info-container {
+  display: block; /* Added this, delete first if broken*/
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 30px 6% 0;
+  position: relative;
+}
+
+.resizingElement1 {
+  height: 335px;
+  margin: 10px;
+  padding: 0;
+  width: calc(100% - 20px);
+  outline: 1px solid black;
+  display: inline-flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.left-box-img1 {
+  max-width: 335;
+  max-height: 100%;
+  -o-object-fit: 335px;
+     object-fit: 335px; /* You can use 'cover' or 'contain' as needed */
+}
+
+.box1 {
+  display: flex;
+  height: 335px; /* Set the height for both divs */
+}
+
+.right-box-info-container1 {
+  display: block; /* Added this, delete first if broken*/
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 30px 6% 0;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .resizingElement {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 0;
+  }
+}
+@media (min-width: 1500px) {
+  .resizingElement {
+    width: calc(33.33333% - 20px);
+    margin: 10px;
+    padding: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* … */
+}
+.ci-s1 {
+  font-size: 15px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s2 {
+  font-size: 25px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s3 {
+  font-size: 30px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ci-s4 {
+  font-size: 10px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}/*# sourceMappingURL=testNewCarousel.css.map */

@@ -1778,6 +1778,110 @@
 			</div>
 		</div>
 
+		<!-- "explore-all-vehicles-carousel-container" holds all content for ALL 5 vehicle sections -->
+		<section class="explore-all-vehicles-carousel-container">
+			<div class="explore-all-vehicles-header">
+				<h1 class="nav justify-content-center">Explore All Vehicles</h1>
+			</div>
+			<div>
+				<ol class="nav justify-content-center">
+					<li class="mx-3"><button class="button" onclick="changedata(0)">Cars & Minivans</button></li>
+					<li class="mx-3"><button class="button" onclick="changedata(1)">Trucks</button></li>
+					<li class="mx-3"><button class="button" onclick="changedata(2)">SUVs & Crossovers</button></li>
+					<li class="mx-3"><button class="button" onclick="changedata(3)">Electric</button></li>
+					<li class="mx-3"><button class="button" onclick="changedata(4)">Lil Tikes</button></li>
+				</ol>
+			</div>
+
+			<!-- "C_M" holds all content for section slides/info && buttons -->
+			<section id="C_M">
+				<!-- "C_M-container-outer" holds ALL slides/info for "C_M" -->
+				<!-- JavaScript:: C_M-carousel-item-container -->
+				<div id="C_M-container-outer">
+					<!-- "C_M-carousel-item-container" holds each individual slide info -->
+					<!-- JavaScript:: C_M-carousel-item-container -->
+					<div class="C_M-carousel-item-container vehicle-carousel-item-container">
+						<!-- "left-box-img-container" holds the img on the left -->
+						<div class="left-box-img-container box">
+							<img class="left-box-img" src="/Images/test-img/860-200x300.jpg" alt="Image" />
+						</div>
+
+						<!-- "right-box-info-container" holds the info on the left -->
+						<section class="right-box-info-container box px-3 py-2">
+							<!-- "box-header" == Year | Type -->
+							<div class="box-header mb-3">
+								<p class="header-year ci-s1">2023 <span class="mx-1">|</span> hybrid 1</p>
+							</div>
+							<!-- "box-title" == car model -->
+							<div class="box-title mb-3">
+								<p class="title-car-name ci-s2">Fjord Fjusion</p>
+							</div>
+							<!-- "box-snippit" == about the car -->
+							<div class="box-snippit">
+								<p class="snippit-text ci-s1">The car for all cars if cars could infact have cars, honestly not sure how that would work.</p>
+							</div>
+
+							<!-- "box-inner-container" container to hold side-by-side info / buttons -->
+							<!-- "row" sets the pricing and MPG side by side -->
+							<section class="row box-inner-container">
+								<!-- "inner-container-left" pricing / pricing disclaimer col-6 -->
+								<div class="inner-container-left col-6">
+									<p class="inner-container-left-price ci-s3">$39,999</p>
+									<p class="inner-container-left-disclaimer ci-s4">might be more, might be less *</p>
+								</div>
+								<!-- "inner-container-right" MPG / MPG disclaimer col-6 -->
+								<div class="inner-container-right col-6">
+									<p class="inner-container-right-mpg ci-s3">40/35</p>
+									<p class="inner-container-right-disclaimer ci-s4">Might get 50?</p>
+								</div>
+								<!-- "row" sets the 'explore' and 'build' side by side -->
+								<div class="row">
+									<div class="button-container-left col-6">
+										<button class="btn-type-one">explore</button>
+									</div>
+									<div class="button-container-right col-6">
+										<button class="btn-type-one">build</button>
+									</div>
+								</div>
+							</section>
+						</section>
+					</div>
+				</div>
+				<div class="carousel-buttons-container">
+					<div class="carousel-buttons mt-3">
+						<button id="C_M-prev-slide" class="btn-type-two prev-slide mx-5">
+							<svg class="btn-type-two-img prev-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path
+										d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 
+													33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 
+													0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 
+													0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 
+													0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
+								</g>
+							</svg>
+						</button>
+						<button id="C_M-next-slide" class="btn-type-two next-slide mx-5">
+							<svg class="btn-type-two-img next-slide-img" fill="#f0f8ff" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path
+										d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 
+													0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 
+													0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 
+													22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 
+													22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path>
+								</g>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</section>
+
 		<!-- custom js -->
 		<script src="/carouselBackup.js"></script>
 

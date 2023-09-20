@@ -1,19 +1,11 @@
-html {
-	overflow-x: hidden;
-}
-
 /* v--v--v--v--v--v--v--v--DO NOT MODIFY--v--v--v--v--v--v--v--v--v--v */
-$padding-value: 20px;
-.stationary-wrapper {
-	outline: 1px solid blue;
-}
-
 .vehicle-container-outer {
-	display: inline-flex;
-	width: fit-content;
+	display: flex;
+	transition: transform 1s ease;
+	width: 100%;
 	margin: 0;
-	// transform: translateX(calc(0 * (-1200px + (-#{$padding-value}) * 2)));
-	outline: 1px solid green;
+	padding-left: 30px;
+	outline: 1px solid blue;
 }
 
 .vehicle-carousel-item-container {
@@ -22,7 +14,7 @@ $padding-value: 20px;
 	width: 600px;
 	margin-right: 30px;
 	padding: 0;
-	padding-left: #{$padding-value};
+	transform: translateX(calc(600px + 30px));
 	border-radius: 10% 0 0 10%;
 }
 
@@ -45,6 +37,10 @@ $padding-value: 20px;
 	border-left: none;
 	border-radius: 0 30px 6% 0;
 	position: relative;
+}
+
+.last-carousel-item-containe {
+	padding-right: 26px;
 }
 /* ^--^--^--^--^--^--^--^--DO NOT MODIFY--^--^--^--^--^--^--^--^--^--^ */
 
